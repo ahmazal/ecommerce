@@ -1,3 +1,5 @@
+import heroimg from "../../../assets/img/hero.png"
+
 function Hero() {
   return (
     <>
@@ -9,7 +11,7 @@ function Hero() {
           {/* gambar */}
           <div className="flex flex-1 justify-center lg:justify-end max-w-md lg:w-1/2">
             <img
-              src="../../src/assets/img/hero.png"
+              src={heroimg}
               alt="hero"
               className="w-3/4 sm:w-2/3 lg:w-full max-w-md lg:max-w-xl object-contain h-auto"
             />

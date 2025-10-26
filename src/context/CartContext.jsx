@@ -52,7 +52,7 @@ const updateQuantity = (id, sizeObj, qty) => {
   return (
     <CartContext.Provider
       value={{ cart, addToCart, removeFromCart, clearCart, totalItems, updateQuantity, setCart }}
-      >
+    >
       {children}
     </CartContext.Provider>
   );
