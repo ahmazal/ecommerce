@@ -29,7 +29,7 @@ const ProductForm = () => {
   const [categories, setCategories] = useState([]);
   const [uploadError, setUploadError] = useState("");
   const [newGuideCol, setNewGuideCol] = useState("");
-  const apiUrl = "http://localhost:3005";
+  const apiUrl = "https://backendlombaecomerce-production.up.railway.app";
 
   useEffect(() => {
     const fetchCategories = async () => {
