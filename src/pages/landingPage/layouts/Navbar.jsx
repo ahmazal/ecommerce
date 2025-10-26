@@ -14,7 +14,7 @@ import { BsTruck } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import SearchPopUp from "../layouts/fixtures/SearchPopUp";
 import { useFavorites } from "../../../hooks/useFavorites";
-import { useCart } from "../../../context/cartContext";
+import { useCart } from "../../../context/CartContext";
 import logo from "../../../img/logo.png";
 
 export default function Navbar() {
