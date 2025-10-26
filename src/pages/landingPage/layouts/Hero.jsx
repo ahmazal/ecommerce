@@ -22,9 +22,7 @@ function Hero() {
               HAPPY BELANJA
             </h1>
             <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-              libero quidem et nostrum ipsum sequi tempora recusandae?
-              Quibusdam, eaque ad?
+              Selamat datang di FSDR, platform e-commerce yang menghadirkan koleksi fashion terbaik untuk kamu yang ingin tampil percaya diri setiap hari. Kami percaya bahwa gaya bukan hanya tentang pakaian, tapi tentang bagaimana kamu mengekspresikan diri.
             </p>
             <button className="border rounded-lg px-4 py-2 bg-black hover:bg-zinc-700 transition duration-300 ease-in-out">
               <a
