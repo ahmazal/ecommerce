@@ -473,9 +473,6 @@ export default function BuyProduct() {
                     <FaArrowRightLong className="text-white" size={20} />
                   </div>
                 </div>
-                <div className="p-2 border cursor-pointer items-center w-12 h-12 justify-center flex">
-                  <CiHeart size={30} />
-                </div>
               </div>
 
               <div className="text-gray-700">
