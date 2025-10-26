@@ -20,7 +20,7 @@ function normalizeToSearchText(s) {
     .replace(/[^0-9a-zA-Z\s]+/g, " ")
     .replace(/\s+/g, " ")
     .trim()
-    // .toLowerCase();
+    .toLowerCase();
 }
 
 function Category() {
