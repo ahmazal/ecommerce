@@ -72,7 +72,7 @@ export default function ProductSection({
     encodeURIComponent(
       String(s || "")
         .trim()
-        .toLowerCase()
+        // .toLowerCase()
         .replace(/\s+/g, "-")
         .replace(/[^a-z0-9\-]/g, "")
     );

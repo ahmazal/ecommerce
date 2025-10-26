@@ -59,7 +59,7 @@ function Hots() {
     const normalize = (s) =>
       String(s ?? "")
         .trim()
-        .toLowerCase()
+        // .toLowerCase()
         .replace(/[\s\-_\/]+/g, " ")
         .replace(/[^0-9a-z\s]/gi, "")
         .replace(/\s+/g, " ")
