@@ -105,8 +105,7 @@ export default function Navbar() {
             {/* desktop */}
             <div className="hidden lg:block w-full px-8 lg:px-16 xl:px-24 py-2">
               <div className="flex items-center justify-between w-full">
-                <div 
-                className="flex-shrink-0">
+                <div className="flex-shrink-0">
                   <img
                     className="h-10 w-auto object-contain"
                     src={logo}
@@ -166,7 +165,7 @@ export default function Navbar() {
                           <button
                             onClick={() => navigate("/user-profile")}
                             className="hover:underline cursor-pointer text-sm"
-                            >
+                          >
                             Profil
                           </button>
                         </div>
@@ -265,8 +264,13 @@ export default function Navbar() {
               />
               {/* ikon kanan */}
               <div className="flex items-center gap-4">
+                <HiOutlineUserCircle
+                size={18}
+                  onClick={() => navigate("/user-profile")}
+                  className="hover:underline cursor-pointer text-sm"
+                />
                 <FiSearch
-                  size={22}
+                  size={18}
                   className="text-gray-700 cursor-pointer hover:text-indigo-600 transition"
                   onClick={() => setShowsearch(true)}
                 />
@@ -276,7 +280,7 @@ export default function Navbar() {
                   className="relative"
                 >
                   <TbHeart
-                    size={22}
+                    size={18}
                     className="text-gray-700 hover:text-pink-600 transition"
                   />
                   {favorites.length > 0 && (
@@ -306,7 +310,6 @@ export default function Navbar() {
           {/* spacer */}
           {isSticky && <div className="h-[90px] lg:h-[120px]" />}
         </div>
-        
       </div>
 
       {/* popup favorit */}
@@ -390,12 +393,12 @@ export default function Navbar() {
 
       {/* popup search */}
       <div>
-      <SearchPopUp
-        show={showSearch}
-        onClose={() => setShowsearch(false)}
-        query={query}
-        setQuery={setQuery}
-      />
+        <SearchPopUp
+          show={showSearch}
+          onClose={() => setShowsearch(false)}
+          query={query}
+          setQuery={setQuery}
+        />
       </div>
     </>
   );
