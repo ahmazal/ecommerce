@@ -14,7 +14,7 @@ function Hots() {
 
   const cards = [
     { id: 1, image: pria, name: "pria" },
-    { id: 2, image: wanita, name: "wanita" },
+    { id: 2, image: wanita, name: "Wanita" },
     { id: 3, image: anak, name: "anak" },
   ];
 
@@ -37,7 +37,7 @@ function Hots() {
     encodeURIComponent(
       String(s || "")
         .trim()
-        // .toLowerCase()
+        .toLowerCase()
         .replace(/\s+/g, "-")
         .replace(/[^a-z0-9\-]/g, "")
     );
@@ -59,7 +59,7 @@ function Hots() {
     const normalize = (s) =>
       String(s ?? "")
         .trim()
-        // .toLowerCase()
+        .toLowerCase()
         .replace(/[\s\-_\/]+/g, " ")
         .replace(/[^0-9a-z\s]/gi, "")
         .replace(/\s+/g, " ")

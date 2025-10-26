@@ -1,20 +1,12 @@
-import { useNavigate } from "react-router-dom";
-import heroimg from "../../../assets/img/hero.png";
+import heroimg from "../../../assets/img/hero.png"
 
 function Hero() {
-  const navigate = useNavigate();
-
-  const onShopClick = () => {
-    navigate("/category/all", { state: { label: "Semua Produk" } });
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <>
       <div
         id="Hero"
         className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-8 px-4 sm:px-8 lg:px-14 bg-[#e4e2e6]"
-      >
+        >
         <div className="pb-4 w-full flex flex-col md:flex-row justify-center items-center gap-6 lg:gap-8">
           {/* gambar */}
           <div className="flex flex-1 justify-center lg:justify-end max-w-md lg:w-1/2">
@@ -24,8 +16,7 @@ function Hero() {
               className="w-3/4 sm:w-2/3 lg:w-full max-w-md lg:max-w-xl object-contain h-auto"
             />
           </div>
-
-          {/* teks */}
+          {/* Teks */}
           <div className="flex flex-1 flex-col items-center lg:items-start justify-center gap-6 text-center lg:text-left max-w-lg px-2">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
               HAPPY BELANJA
@@ -33,11 +24,12 @@ function Hero() {
             <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
               Selamat datang di FSDR, platform e-commerce yang menghadirkan koleksi fashion terbaik untuk kamu yang ingin tampil percaya diri setiap hari. Kami percaya bahwa gaya bukan hanya tentang pakaian, tapi tentang bagaimana kamu mengekspresikan diri.
             </p>
-            <button
-              onClick={onShopClick}
-              className="border rounded-lg px-4 py-2 bg-black hover:bg-zinc-700 transition duration-300 ease-in-out font-bold text-sm sm:text-base text-gray-200"
-            >
-              Shop Now
+            <button className="border rounded-lg px-4 py-2 bg-black hover:bg-zinc-700 transition duration-300 ease-in-out">
+              <button
+                className="font-bold text-sm sm:text-base text-gray-200"
+              >
+                Shop Now
+              </button>
             </button>
           </div>
         </div>
