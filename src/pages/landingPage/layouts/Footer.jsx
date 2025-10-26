@@ -8,9 +8,9 @@ function Footer() {
   const datas = [
     {
       title:
-        "TAWAKAL adalah merek fashion yang mengutamakan kenyamanan dan gaya",
+        "FSDR adalah merek fashion yang mengutamakan kenyamanan dan gaya",
       description:
-        "Selamat datang di situs resmi TAWAKAL shop, kami percaya bahwa pakaian yang nyaman adalah kunci untuk tampil percaya diri. Dengan desain yang modern dan bahan berkualitas tinggi, produk kami dirancang untuk memenuhi kebutuhan gaya hidup aktif Anda. Bergabunglah dengan komunitas kami dan rasakan perbedaannya!",
+        "Selamat datang di situs resmi FSDR shop, kami percaya bahwa pakaian yang nyaman adalah kunci untuk tampil percaya diri. Dengan desain yang modern dan bahan berkualitas tinggi, produk kami dirancang untuk memenuhi kebutuhan gaya hidup aktif Anda. Bergabunglah dengan komunitas kami dan rasakan perbedaannya!",
     },
     {
       title: "Bergaya dan nyaman dengan proiduk kami dengan kualitas terbaik",

@@ -194,6 +194,15 @@ export default function Navbar() {
 
                   {/* ikon kanan */}
                   <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-3">
+                          <HiOutlineUserCircle />
+                          <button
+                            onClick={() => navigate("/user-profile")}
+                            className="hover:underline cursor-pointer text-sm"
+                            >
+                            Profil
+                          </button>
+                        </div>
                     <button
                       type="button"
                       onClick={() => toggleFavPopup()}
