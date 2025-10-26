@@ -6,7 +6,7 @@ import AddressModal from "./components/AddressModal";
 import { RiCheckLine } from "react-icons/ri";
 import { MdErrorOutline } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
-import { useCart } from "../../context/cartContext";
+import { useCart } from "../../context/CartContext";
 import logo from "../../img/logo.png";
 import { CiMobile3 } from "react-icons/ci";
 import { FaCcVisa } from "react-icons/fa";
