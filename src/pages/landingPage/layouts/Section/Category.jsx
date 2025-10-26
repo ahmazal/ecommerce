@@ -20,7 +20,7 @@ function normalizeToSearchText(s) {
     .replace(/[^0-9a-zA-Z\s]+/g, " ")
     .replace(/\s+/g, " ")
     .trim()
-    .toLowerCase();
+    // .toLowerCase();
 }
 
 function Category() {
@@ -244,14 +244,14 @@ function Category() {
               {desiredRawLabel ? `${desiredRawLabel}` : "Semua Produk"}
             </h2>
             <div
-                                onClick={() => navigate(-1)}
-                                className="lg:flex items-center hidden  gap-1.5 hover:bg-black hover:text-white h-5"
-                              >
-                                <IoIosArrowRoundBack size={30} strokeWidth={2} />
-                                <h1 className="text-[12px] tracking-widest underline cursor-pointer font-semibold">
-                                  KEMBALI
-                                </h1>
-                              </div>
+              onClick={() => navigate(-1)}
+              className="lg:flex items-center hidden  gap-1.5 hover:bg-black hover:text-white h-5"
+            >
+              <IoIosArrowRoundBack size={30} strokeWidth={2} />
+              <h1 className="text-[12px] tracking-widest underline cursor-pointer font-semibold">
+                KEMBALI
+              </h1>
+            </div>
           </header>
 
           {/* === FILTER BAR === */}
@@ -372,7 +372,9 @@ function Category() {
                       </svg>
                     </button>
 
-                    <div className={`w-full h-44 sm:h-48 md:h-52 flex items-center justify-center overflow-hidden bg-[${filtered.warna}]`}>
+                    <div
+                      className={`w-full h-44 sm:h-48 md:h-52 flex items-center justify-center overflow-hidden bg-[${filtered.warna}]`}
+                    >
                       {img ? (
                         <img
                           src={img}
