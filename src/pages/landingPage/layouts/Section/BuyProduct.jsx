@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { useLocation, useParams, useNavigate } from "react-router-dom";
-import { useCart } from "../../../../context/cartContext";
+import { useCart } from "../../../../context/CartContext";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import { useFetch } from "../../../../hooks/useFetch";

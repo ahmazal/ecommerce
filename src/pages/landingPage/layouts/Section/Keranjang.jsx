@@ -1,6 +1,6 @@
 import React, { use } from "react";
 import { useState, useEffect } from "react";
-import { useCart } from "../../../../context/cartContext";
+import { useCart } from "../../../../context/CartContext";
 import logo from "../../../../img/logo.png";
 import { BsTruck } from "react-icons/bs";
 import { CiLogin } from "react-icons/ci";
