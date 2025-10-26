@@ -3,6 +3,7 @@ import axiosClient from "../api/axiosClient";
 import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import logo from "../img/logo.png";
+import hero from "../img/loginImage.png"
 import Swal from "sweetalert2";
 
 export default function Login() {
@@ -62,7 +63,7 @@ export default function Login() {
                   <div>
                     <img
                       className="w-40 md:w-50 lg:w-70 h-auto object-cover"
-                      src="../src/img/logo.png"
+                      src={logo}
                       alt=""
                     />
                   </div>
@@ -118,7 +119,7 @@ export default function Login() {
             <div className="hidden md:flex md:flex-1/2">
               <img
                 className="w-full object-cover"
-                src="../src/img/loginImage.png"
+                src={hero}
                 alt=""
               />
             </div>
