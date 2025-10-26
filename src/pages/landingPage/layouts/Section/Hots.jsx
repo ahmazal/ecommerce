@@ -37,7 +37,7 @@ function Hots() {
     encodeURIComponent(
       String(s || "")
         .trim()
-        .toLowerCase()
+        // .toLowerCase()
         .replace(/\s+/g, "-")
         .replace(/[^a-z0-9\-]/g, "")
     );
