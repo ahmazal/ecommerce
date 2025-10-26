@@ -14,7 +14,7 @@ function Hots() {
 
   const cards = [
     { id: 1, image: pria, name: "pria" },
-    { id: 2, image: wanita, name: "Wanita" },
+    { id: 2, image: wanita, name: "wanita" },
     { id: 3, image: anak, name: "anak" },
   ];
 
