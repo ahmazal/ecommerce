@@ -68,7 +68,7 @@ export default function Register() {
               <div>
                 <img
                   className="w-40 lg:w-70 h-auto object-cover"
-                  src="../src/img/logo.png"
+                  src={logo}
                   alt=""
                 />
               </div>
@@ -96,7 +96,7 @@ export default function Register() {
               <div>
                 <img
                   className="w-32 h-auto object-cover"
-                  src="../src/img/logo.png"
+                  src={logo}
                   alt=""
                 />
               </div>
