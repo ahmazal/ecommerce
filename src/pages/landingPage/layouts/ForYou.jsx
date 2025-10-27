@@ -70,7 +70,7 @@ const ForYou = () => {
       <section className="flex flex-col">
         <div
           id="Service"
-          className="w-full min-h-screen mt-16 px-4 sm:px-8 lg:px-14 py-8 relative"
+          className="w-full h-full lg:min-h-screen mt-16 px-4 sm:px-8 lg:px-14 py-8 relative"
         >
           {/* Tombol Navigasi */}
           <button

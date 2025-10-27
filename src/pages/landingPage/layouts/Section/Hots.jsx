@@ -89,7 +89,7 @@ function Hots() {
   return (
     <>
       {/* What's Hot Section */}
-      <div className="mt-16 sm:mt-24 px-4 sm:px-8 lg:px-16 py-4 min-h-[60vh] overflow-hidden">
+      <div className="sm:mt-24 px-4 sm:px-8 lg:px-16 py-4 min-h-[60vh] overflow-hidden">
         <h1 className="font-bold text-xl sm:text-2xl mb-4">WHAT'S HOT</h1>
         <div className="flex justify-center overflow-x-auto scrollbar-hide gap-4">
           {sorted.slice(0, 4).map((i) => {
