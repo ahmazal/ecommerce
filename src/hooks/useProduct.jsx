@@ -184,20 +184,20 @@ export default function ProductSection({
                 {item.product.discount > 0 ? (
                   <span className="flex flex-col gap-1">
                     <span className="flex gap-2 items-end">
-                      <h2>{formatToIDR(product.price - product.discount)}</h2>
+                      <h2>{formatToIDR(item.product.price - item.product.discount)}</h2>
                       <h2 className="text-xs line-through text-[#adadad]">
-                        {formatToIDR(product.price)}
+                        {formatToIDR(item.product.price)}
                       </h2>
                     </span>
                     <span className="text-sm text-red-500">
                       <span className="text-black text-xs font-light">
                         Anda menghemat{" "}
                       </span>
-                      {formatToIDR(product.discount)}
+                      {formatToIDR(item.product.discount)}
                     </span>
                   </span>
                 ) : (
-                  <h2>{formatToIDR(product.price)}</h2>
+                  <h2>{formatToIDR(item.product.price)}</h2>
                 )}
               </div>
             </div>
