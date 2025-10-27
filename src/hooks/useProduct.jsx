@@ -181,23 +181,25 @@ export default function ProductSection({
                 <p className="mt-1 sm:mt-2 text-zinc-700 truncate w-full">
                   {item.name}
                 </p>
-                {item.product.discount > 0 ? (
+                {item.discount && item.discount > 0 ? (
                   <span className="flex flex-col gap-1">
                     <span className="flex gap-2 items-end">
-                      <h2>{formatToIDR(item.product.price - item.product.discount)}</h2>
+                      <h2>
+                        {formatToIDR((item.price ?? 0) - (item.discount ?? 0))}
+                      </h2>
                       <h2 className="text-xs line-through text-[#adadad]">
-                        {formatToIDR(item.product.price)}
+                        {formatToIDR(item.price ?? 0)}
                       </h2>
                     </span>
                     <span className="text-sm text-red-500">
                       <span className="text-black text-xs font-light">
                         Anda menghemat{" "}
                       </span>
-                      {formatToIDR(item.product.discount)}
+                      {formatToIDR(item.discount ?? 0)}
                     </span>
                   </span>
                 ) : (
-                  <h2>{formatToIDR(item.product.price)}</h2>
+                  <h2>{formatToIDR(item.price ?? 0)}</h2>
                 )}
               </div>
             </div>
