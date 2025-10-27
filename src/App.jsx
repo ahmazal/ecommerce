@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 
 // pages user
-import Home from "./pages/Home";
 import Checkout from "./pages/checkout/Checkout";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -42,7 +41,6 @@ export default function App() {
           <Route path="/" element={<Apps />} />
           
           {/* user pages */}
-          <Route path="/home" element={<Home />} />
           <Route path="/keranjang" element={<Keranjang />} />
           <Route path="/user-profile" element={<User />} />
           <Route path="/checkout" element={
