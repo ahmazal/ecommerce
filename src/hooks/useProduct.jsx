@@ -22,7 +22,15 @@ export default function ProductSection({
   const raw = items ?? data ?? [];
   const arr = Array.isArray(raw) ? raw : [];
   const { addFavorite, removeFavorite, isFavorite } = useFavorites();
-  const product = fetchedProduct ? { ...initial, ...fetchedProduct } : initial;
+  const initial = location.state ?? null;
+  const fetchedProduct = data
+    ? Array.isArray(data)
+      ? data[0] ?? null
+      : data
+    : null;
+  const product = fetchedProduct
+    ? { ...initial, ...fetchedProduct } // fetchedProduct akan menimpa field kosong
+    : initial;
 
   const formatToIDR = (number) =>
     new Intl.NumberFormat("id-ID", {
