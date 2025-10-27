@@ -181,7 +181,7 @@ export default function ProductSection({
                 <p className="mt-1 sm:mt-2 text-zinc-700 truncate w-full">
                   {item.name}
                 </p>
-                {product.discount > 0 ? (
+                {item.product.discount > 0 ? (
                   <span className="flex flex-col gap-1">
                     <span className="flex gap-2 items-end">
                       <h2>{formatToIDR(product.price - product.discount)}</h2>
