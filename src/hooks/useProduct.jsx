@@ -19,9 +19,10 @@ export default function ProductSection({
   const { data, loading, error } = items
     ? { data: null, loading: false, error: null }
     : useFetch(endpoint);
-  const raw = items ?? (data ?? []);
+  const raw = items ?? data ?? [];
   const arr = Array.isArray(raw) ? raw : [];
   const { addFavorite, removeFavorite, isFavorite } = useFavorites();
+  const product = fetchedProduct ? { ...initial, ...fetchedProduct } : initial;
 
   const formatToIDR = (number) =>
     new Intl.NumberFormat("id-ID", {
@@ -37,7 +38,7 @@ export default function ProductSection({
     const snapshot = {
       id: rawId,
       name: item?.name ?? item?.title ?? "",
-      Image: item?.Image ?? item?.image ?? (item?.images?.[0] ?? ""),
+      Image: item?.Image ?? item?.image ?? item?.images?.[0] ?? "",
       price: item?.current_price ?? item?.price ?? item?.harga ?? null,
       tipe: item?.tipe || item?.type || item?.category || "",
     };
@@ -173,25 +174,23 @@ export default function ProductSection({
                   {item.name}
                 </p>
                 {product.discount > 0 ? (
-                      <span className="flex flex-col gap-1">
-                        <span className="flex gap-2 items-end">
-                          <h2>
-                            {formatToIDR(product.price - product.discount)}
-                          </h2>
-                          <h2 className="text-xs line-through text-[#adadad]">
-                            {formatToIDR(product.price)}
-                          </h2>
-                        </span>
-                        <span className="text-sm text-red-500">
-                          <span className="text-black text-xs font-light">
-                            Anda menghemat{" "}
-                          </span>
-                          {formatToIDR(product.discount)}
-                        </span>
+                  <span className="flex flex-col gap-1">
+                    <span className="flex gap-2 items-end">
+                      <h2>{formatToIDR(product.price - product.discount)}</h2>
+                      <h2 className="text-xs line-through text-[#adadad]">
+                        {formatToIDR(product.price)}
+                      </h2>
+                    </span>
+                    <span className="text-sm text-red-500">
+                      <span className="text-black text-xs font-light">
+                        Anda menghemat{" "}
                       </span>
-                    ) : (
-                      <h2>{formatToIDR(product.price)}</h2>
-                    )}
+                      {formatToIDR(product.discount)}
+                    </span>
+                  </span>
+                ) : (
+                  <h2>{formatToIDR(product.price)}</h2>
+                )}
               </div>
             </div>
           );
