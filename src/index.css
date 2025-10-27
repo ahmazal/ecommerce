@@ -17,9 +17,6 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
-  /* div {
-    border: 3px solid black;
-  } */
 }
 
 .date-only::-webkit-datetime-edit-text,

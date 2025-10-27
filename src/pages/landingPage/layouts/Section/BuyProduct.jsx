@@ -4,23 +4,9 @@ import { useCart } from "../../../../context/CartContext";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import { useFetch } from "../../../../hooks/useFetch";
-import logo from "../../../../img/logo.png";
-import { HiArrowUturnLeft } from "react-icons/hi2";
-import { ChevronDown, ChevronUp } from "lucide-react";
-import { CgRuler } from "react-icons/cg";
-import Button from "../fixtures/Button";
-import { LiaHeart } from "react-icons/lia";
 import { TbTruckDelivery } from "react-icons/tb";
 import { Element, Link } from "react-scroll";
-import { LiaShoppingBagSolid } from "react-icons/lia";
-import { TbHeart } from "react-icons/tb";
 import ProductSection from "../../../../hooks/useProduct";
-import { Menu, X, Search, ShoppingCart, User } from "lucide-react";
-import { AiOutlineUser } from "react-icons/ai";
-import { CiHeart } from "react-icons/ci";
-import { HiOutlineShoppingBag } from "react-icons/hi2";
-import { CiLogin } from "react-icons/ci";
-import { BsTruck } from "react-icons/bs";
 import {
   IoIosArrowRoundBack,
   IoIosArrowBack,
@@ -59,7 +45,7 @@ export default function BuyProduct() {
       : data
     : null;
   const product = fetchedProduct
-    ? { ...initial, ...fetchedProduct } // fetchedProduct akan menimpa field kosong
+    ? { ...initial, ...fetchedProduct }
     : initial;
   const [selectedIndex, setSelectedIndex] = useState(0);
   const scrollRef = useRef(null);

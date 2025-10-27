@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useFetch } from "../../../hooks/useFetch"; // pastikan path benar
+import { useFetch } from "../../../hooks/useFetch";
 import heroimg from "../../../assets/img/hero.png";
 
 function Hero() {

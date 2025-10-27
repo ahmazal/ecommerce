@@ -175,7 +175,6 @@ export default function ProductSection({
                   />
                 </div>
               </div>
-
               <div className="p-2 text-xs sm:text-sm">
                 <h1 className="text-[#9f9f9f] font-light">{item.tipe}</h1>
                 <p className="mt-1 sm:mt-2 text-zinc-700 truncate w-full">

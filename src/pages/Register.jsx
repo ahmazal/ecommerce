@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { TfiCheck } from "react-icons/tfi";
 import { Menu, X, Search, ShoppingCart, User } from "lucide-react";
 import logo from "../img/logo.png";
-import Swal from "sweetalert2";
 
 export default function Register() {
   const [form, setForm] = useState({

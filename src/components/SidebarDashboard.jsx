@@ -9,7 +9,6 @@ import { FiTag } from "react-icons/fi";
 import { FiUser } from "react-icons/fi";
 import { FiCreditCard } from "react-icons/fi";
 import { FiBarChart2 } from "react-icons/fi";
-import { FiSettings } from "react-icons/fi";
 import { TbLogout2 } from "react-icons/tb";
 import { IoClose } from "react-icons/io5";
 import RightDashboard from "./Dashboard/RightAdminDashboard";

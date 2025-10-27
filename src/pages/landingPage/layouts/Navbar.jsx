@@ -6,8 +6,6 @@ import { AiOutlineUser } from "react-icons/ai";
 import { CiLogin } from "react-icons/ci";
 import {
   HiOutlineShoppingBag,
-  HiOutlineMenu,
-  HiOutlineX,
   HiOutlineUserCircle,
 } from "react-icons/hi";
 import { BsTruck } from "react-icons/bs";

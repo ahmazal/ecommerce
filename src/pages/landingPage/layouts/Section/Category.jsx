@@ -96,12 +96,8 @@ function Category() {
 
   const getProductSearchString = (p) =>
     normalizeToSearchText(
-      // p?.tipe ||
-        // p?.type ||
         p?.category ||
         p?.Category ||
-        // p?.nama ||
-        // p?.name ||
         ""
     );
 
