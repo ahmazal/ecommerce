@@ -60,7 +60,7 @@ const LaporanDashboard = () => {
         </button>
         {isMobileMenuOpen && (
           <div
-            className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40"
+            className="lg:hidden fixed inset-0 bg-black/50 bg-opacity-50 z-40"
             onClick={toggleMobileMenu}
           ></div>
         )}
